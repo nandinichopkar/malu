@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+body{
+    background-image: url(image/1111.jpeg);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html,div{
+    font-family: 'Noto Sans', sans-serif;
+}
+.header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /* position: sticky; */
+    padding: 10px;
+    height: 70px;
+    background-color: #D81E28;
+    text-align: right;
+    /* border: 1px solid white; */
+}
+.header .header-menu{
+    /* width: 60%; */
+    /* border: 1px solid #D81E28; */
+}
+.header .header-menu img{
+    float: left;
+    /* border: 1px solid black; */
+}
+
+.header .header-menu ul li{
+    /* border: 1px solid yellow; */
+    padding: 0px 20px 0px 20px;
+    display: inline;
+    /* width: 70%; */
+}
+.header .header-menu ul{
+    padding: 10px;
+}
+.header .header-menu ul li a{
+    color: white;
+    /* margin-top: 20px; */
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    /* padding: 0px 50px 0px 10px; */
+    /* border: 1px solid black; */
+}
+.header .header-menu ul li a:hover{
+    animation: 1s infinite hed;
+}
+@keyframes hed {
+    0%{border-top: 1px solid white;border-bottom: 1px solid white;}
+    50%{border-bottom: 1px solid #D81E28;border-top: 1px solid #D81E28;}
+    100%{border-top: 1px solid white;border-bottom: 1px solid white;}
+}
+.act{
+    /* padding: 0; */
+    /* color: blue;
+    text-decoration: underline; */
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.copyr{
+    background-color: #D81E28;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+.copyr-main{
+    padding: 0;
+    margin: 0;
+    background-color: #D81E28;
+    color: white;
+}
+.mini-menu{
+    /* padding: 50px; */
+    color: white;
+    font-size: 40px;
+    /* margin: 10px; */
+    display: none;
+}
+.psk{
+    text-decoration: none;
+    color: rgb(255, 250, 203);
+    font-weight: bold;
+}
+@media screen and (max-width: 800px) {
+    .mini-menu{
+        display: block;
+        /* border: 1px solid yellowgreen; */
+    }
+    .header .header-menu ul{
+        padding: 0;
+        margin: 0;
+        /* position: fixed; */
+        /* height: auto; */
+        background-color: #D81E28;
+        /* border: 1px solid yellowgreen; */
+        /* height: 100px; */
+        /* display: unset; */
+        display: none;
+        width: 100%;
+    }
+    .header .header-menu ul li{
+        width: 100%;
+        /* border: 1px solid yellowgreen; */
+        text-align: center;
+        /* margin: 0; */
+        /* padding: 0; */
+        display: block;
+    }
+    .header .header-menu ul li a{
+        font-size: 16px;
+        /* border: 1px solid yellowgreen; */
+        text-align: center;
+        width: 50%;
+        padding: 0;
+    }
+    .header .header-menu{
+        /* border: 1px solid yellowgreen; */
+        width: 100%;
+    }
+    .header{
+        /* border: 1px solid yellowgreen; */
+        height: 100%;
+    }
+    .header .header-menu img{
+        /* width: 100%; */
+    }
+}
